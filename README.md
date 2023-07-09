@@ -33,17 +33,17 @@ The stakeholders for this analysis are wide reaching, but it is most directly re
 
 ```
 
-The main high-level Jupyter notebook for this project can be found [here](notebooks/FINAL_SUMMARY_NOTEBOOK.ipynb). The in-depth modeling notebook can be found [here](notebooks/MODEL.ipynb).
+The main high-level Jupyter notebook for this project can be found [here](bloknoty/FINAL_SUMMARY_NOTEBOOK.ipynb). The in-depth modeling notebook can be found [here](bloknoty/MODEL.ipynb).
 
 
 ## Project Structure
-Given the complex nature of combining three separate datasets from distinct sources, the analysis is conducted in five different notebooks, and one additional notebook is used for summary. The first three focus on cleaning the data through data understanding, manipulation, feature selection, and feature engineering: [cleaning_protests_dataset.ipynb](notebooks/cleaning_protests_dataset.ipynb), [cleaning_regime_changes_dataset.ipynb](notebooks/cleaning_regime_changes_dataset.ipynb), and [cleaning_governments_dataset.ipynb](notebooks/cleaning_governments_dataset.ipynb). Each of these files exports the final resulting dataset into a SQL database, structured to cleanly join them all together.
+Given the complex nature of combining three separate datasets from distinct sources, the analysis is conducted in five different notebooks, and one additional notebook is used for summary. The first three focus on cleaning the data through data understanding, manipulation, feature selection, and feature engineering: [cleaning_protests_dataset.ipynb](bloknoty/cleaning_protests_dataset.ipynb), [cleaning_regime_changes_dataset.ipynb](bloknoty/cleaning_regime_changes_dataset.ipynb), and [cleaning_governments_dataset.ipynb](bloknoty/cleaning_governments_dataset.ipynb). Each of these files exports the final resulting dataset into a SQL database, structured to cleanly join them all together.
 
-The fourth notebook - [MODEL.ipynb](notebooks/MODEL.ipynb) - joins these three SQL files and performs feature engineering that could not be done without aggregating the data from multiple sources. This excludes engineering the target, alongside multiple input features. Beyond these steps, the notebook contains all modeling conducted in this analysis. Since it contains data from all sources, **this notebook is recommended as the place to go for the largest exposure to strategic decision making, understanding the ways in which the data are connected, and the testing of model variations.**
+The fourth notebook - [MODEL.ipynb](bloknoty/MODEL.ipynb) - joins these three SQL files and performs feature engineering that could not be done without aggregating the data from multiple sources. This excludes engineering the target, alongside multiple input features. Beyond these steps, the notebook contains all modeling conducted in this analysis. Since it contains data from all sources, **this notebook is recommended as the place to go for the largest exposure to strategic decision making, understanding the ways in which the data are connected, and the testing of model variations.**
 
-The fifth analysis notebook, [EDA.ipynb](notebooks/EDA.ipynb), is used for exploratory analysis of features.
+The fifth analysis notebook, [EDA.ipynb](bloknoty/EDA.ipynb), is used for exploratory analysis of features.
 
-**The final notebook, [FINAL_SUMMARY_NOTEBOOK.ipynb](notebooks/FINAL_SUMMARY_NOTEBOOK.ipynb) is a high-level summary of all other notebooks, extracting key points from each and discussing key findings. It is recommended that you start here if you are looking to review and understand the project.**
+**The final notebook, [FINAL_SUMMARY_NOTEBOOK.ipynb](bloknoty/FINAL_SUMMARY_NOTEBOOK.ipynb) is a high-level summary of all other notebooks, extracting key points from each and discussing key findings. It is recommended that you start here if you are looking to review and understand the project.**
 
 
 ---
