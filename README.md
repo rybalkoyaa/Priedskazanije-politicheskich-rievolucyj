@@ -1,35 +1,34 @@
-# Predicting Political Revolutions
-Political upheavals have been ever present throughout humanity. Political leaders shape the context for everything we know. For that reason, we as a society need to generate a well-founded understanding of when a revolution or political change is imminent, as well as data-based indicators. This analysis seeks to forecast whether a given protest will lead to a revolution within one year using fundamental characteristics of the protest as well as metrics to understand the government in place at the time of protest.
+# Предсказание политических революций
+Исторически политические потрясения были явлением, присущим во все времена человечества. Как мы знаем, политические лидеры играют основополагающую роль в формировании общественного мнения. В связи с этим, нам, как обществу, требуется сформировать обоснованное понимание, когда наступает момент неизбежной революции или политические перемены. Для этого необходимо определить признаки, которые будут основанны на данных. Целью этого анализа является прогнозирование и обнаружение тех протестов, которые в течение года способны прерасти в государственной переворот. Он основан на базовых характеристиках протеста и метриках, позволяющих оценить действия правительства во время акции протеста.
 
-The stakeholders for this analysis are wide reaching, but it is most directly relevant to political scientists. As a field focused on understanding the science of politics, including to inform decision making and strategy, a data science investigation into the topic of regime change remains highly relevant. Similarly, political organizers or government leadership could also gather insights with the potential to guide strategic decisions and determine where efforts are best focused and with the highest likelihood of creating an impact.
+Данное исследоване может представлять интерес для самых различных заинтересованных сторон, но непосредственное отношение он имеет к политологам. Изучение проблематики замены одних правящих режимов другими представлет собой переосмысление самого предмета политологии, а результатом становится принятие практических решений и выработка стратегий реагирования, основанных на данных. Поэтому применение науки о данных в этой сфере остается весьма актуальным. Аналогичным образом, политические деятели или государственное руководство может также собирать определенную информацию, что способна послужить руководством при принятии стратегических решений и выявлять то, на чем лучше всего сконцентрировать силы, чтобы с наибольшей вероятностью добиться требуемого эффекта.
 
 
-
-## Repository Structure
+## Структура хранилища
 
 ```
 
 │
-├── data
-│   ├── processed   <-- SQL files containing processed data
-│   └── raw         <-- Original data
-│       ├── Mass-Mobilization-Protests           <-- Data source #1
-│       ├── Polity-Project                       <-- Data source #2
-│       └── Database-of-Political-Institutions   <-- Data source #3
+├── data            <-- Данные, используемые при анализе
+│   ├── processed   <-- SQL-файлы, содержащие обработанные данные
+│   └── raw         <-- Исходные данные (необработанные)
+│       ├── Mass-Mobilization-Protests           <-- Источник данных №1
+│       ├── Polity-Project                       <-- Источник данных №2
+│       └── Database-of-Political-Institutions   <-- Источник данных №3
 │
-├── models           <-- Models used in analysis
+├── models           <-- Модели, используемые в анализе
 │
-├── notebooks        <-- Jupyter Notebooks for exploration and presentation
-│   └── cleaning     <-- Preliminary notebooks for cleaning and EDA
+├── bloknoty         <-- Блокноты Jupyter для изучения и обозрения
+│   └── cleaning     <-- Черновые блокноты для очистки и разведочного анализа
 │
-├── references       <-- Data user manuals
+├── references       <-- Руководства по использованию данных
 │
-├── report           <-- Non-technical presentation
-│   └── figures      <-- Figures used in presentation and notebooks
+├── report           <-- Нетехнический обзор в виде отчета
+│   └── figures      <-- Изображения используемые в обзорах
 │
-├── src              <-- Custom functions used in notebooks
+├── src              <-- Пользовательские функции, используемые в блокнотах
 │
-└── README.md        <-- Main README file
+└── README.md        <-- Главный README-файл.
 
 ```
 
